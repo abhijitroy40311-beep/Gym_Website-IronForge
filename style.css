@@ -1,0 +1,40 @@
+/* Custom Glassmorphism & Utilities */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-glow {
+    text-shadow: 0 0 10px rgba(255, 42, 0, 0.5);
+}
+
+.box-glow:hover {
+    box-shadow: 0 0 20px rgba(255, 42, 0, 0.4);
+}
+
+/* Hide Scrollbar for Masonry/Clean look */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff2a00;
+}
+
+/* Reveal Animation Classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
